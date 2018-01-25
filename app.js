@@ -16,7 +16,8 @@ app.get('/', function(req, res, next){
   var lang = req.acceptsLanguages();
   var soft = "OS: " + req.useragent.os;
   soft += ", Browser: " + req.useragent.browser;
-  var ip = req.ip;
+  var ip = req.headers['x-forwarded-for'];
+  ip = ip.substring(0, ip.indexOf(','));
 
   res.json({'ip':ip, 'lang':lang[0], 'soft':soft});
 })

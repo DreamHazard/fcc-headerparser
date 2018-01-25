@@ -1,0 +1,31 @@
+{
+  "name": "dreamhazard-fcc-headerparser",
+  "version": "1.0.0",
+  "description": "Header parser project for FreeCodeCamp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DreamHazard/fcc-headerparser.git"
+  },
+  "keywords": [
+    "node",
+    "header",
+    "parser"
+  ],
+  "author": "DreamHazard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DreamHazard/fcc-headerparser/issues"
+  },
+  "homepage": "https://github.com/DreamHazard/fcc-headerparser#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "express-useragent": "^1.0.8",
+    "nodemon": "^1.14.11"
+  }
+}
